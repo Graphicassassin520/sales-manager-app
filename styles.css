@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.section {
+    display: none;
+}
+
+.section.active {
+    display: block;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input, form select {
+    margin-bottom: 10px;
+}
+
+#notifications {
+    background-color: #f8d7da;
+    color: #721c24;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.kanban-board {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    width: 30%;
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+.tasks {
+    min-height: 100px;
+}
+
+.task-card {
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    cursor: move;
+}
+
+.task-card button {
+    float: right;
+    margin-left: 10px;
+}
+
+@media (max-width: 600px) {
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+    form {
+        max-width: 100%;
+    }
+    .kanban-board {
+        flex-direction: column;
+    }
+    .column {
+        width: 100%;
+    }
+}
